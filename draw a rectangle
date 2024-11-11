@@ -1,0 +1,16 @@
+import cv2 as cv
+import numpy as np
+import matplotlib.pyplot as plt
+img = cv.imread('kunjippa.jpeg')
+cv.line(img,(100,50),(300,400),(255,0,0),10)
+cv.line(img,(400,50),(50,400),(0,255,0),10)
+cv.rectangle(img,(140,8),(240,144),(0,255,0),10)
+cv.rectangle(img,(200,155),(340,344),(0,255,0),-10)
+cv.imshow('image',img)
+img2=plt.imread('kunjippa.jpeg')
+plt.imshow(img2)
+plt.show()
+
+
+cv.waitKey(0)
+cv.destroyAllWindows()
