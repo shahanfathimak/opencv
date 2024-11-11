@@ -1,0 +1,15 @@
+import cv2 as cv
+import numpy as np
+import matplotlib.pyplot as plt
+img = cv.imread('kunjippa.jpeg')
+cv.imshow('image',img)
+print(img.shape)
+raws,cols,channel=img.shape
+center(cols/2,raws/2)
+print(center)
+m=cv.rotationMatric2D(center=center,angle=45,scale=1)
+img3=cv.wrapAffine(img,m,(cols,raws))
+cv.imshow('image3',img3)
+
+cv.waitKey(0)
+cv.destroyAllWindows()
