@@ -1,0 +1,7 @@
+import cv2 as cv
+img=cv.imread('kunjippa.jpeg')
+px=img(100,100)
+print(px)
+cv.imshow(img)
+cv.waitKey(0)
+cv.destroyAllWindow
